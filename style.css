@@ -1,0 +1,168 @@
+body {
+    background: linear-gradient(to right, #1e5eff, #ffb347);
+    margin: 0;
+    font-family: Arial;
+}
+.entry {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.card {
+  background: rgba(255, 255, 255, 0.4);
+
+  text-align: center;
+
+}
+h1 {
+  text-align: center;
+}.entry p {
+    text-align: left;
+    margin: 15px;
+    padding: 0px;
+}
+
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.ipa {
+    display: none;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+.word:hover .ipa {
+    display: inline;
+}
+
+.word:hover .ipa {
+    visibility: visible;
+}
+.plural-info {
+    position: relative;
+    cursor: help;
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+.plural-popup {
+    display: none;
+    position: absolute;
+
+    left: 0;
+    top: 1.5em;
+
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 8px 10px;
+
+    white-space: nowrap;
+    z-index: 100;
+}
+
+.plural-info:hover .plural-popup {
+    display: block;
+}
+
+
+.dictionary {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 30px 50px;
+
+    background: rgba(245, 245, 245, 0.75);
+    border-radius: 25px;
+
+    backdrop-filter: blur(12px);
+
+    min-height: 100vh;
+­­}
+.dictionary-menu {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.dictionary-button {
+    background: rgba(255,255,255,0.5);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+/* invisible hover bridge */
+.dictionary-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 20px;
+}
+
+
+.dictionary-dropdown {
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: calc(100% + 10px);
+
+    background: rgba(245,245,245,0.9);
+    border-radius: 15px;
+    padding: 10px;
+
+    min-width: 180px;
+    z-index: 100;
+}
+
+
+.dictionary-menu:hover .dictionary-dropdown {
+    display: block;
+}
+
+.nav-button {
+    background: #333;
+    color: white;
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.3em;
+
+    transition: transform 0.2s;
+}.conjugation {
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 10px 15px;
+
+    background: rgba(255,255,255,0.25);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.conjugation p {
+    margin: 5px;
+}
+
+.word:hover .ipa {
+    display: inline;
+}
