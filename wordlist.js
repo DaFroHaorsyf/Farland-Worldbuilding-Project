@@ -35,6 +35,7 @@ const wordlist = [
     { id: "nD004", type: "n", word: "Doghter", meaning: "daughter" },
 
     { id: "nE001", type: "n", word: "End", meaning: "end" },
+	{ id: "nE002", type: "n", word: "Emmer", meaning: "bowl" },
 
     { id: "nF001", type: "n", word: "Fan", meaning: "joke" },
     { id: "nF002", type: "n", word: "Farcen", meaning: "pig" },
@@ -47,8 +48,8 @@ const wordlist = [
     { id: "nF009", type: "n", word: "Fjůln", meaning: "feeling" },
     { id: "nF010", type: "n", word: "Fjůr", meaning: "fire" },
     { id: "nF011", type: "n", word: "Foil", meaning: "bird" },
-    { id: "nF012", type: "n", word: "Frål", meaning: "story" },
-    { id: "nF013", type: "n", word: "Frålcen", meaning: "small talk" },
+    { id: "nF012", type: "n", word: "Fgrål", meaning: "story" },
+    { id: "nF013", type: "n", word: "fgrålcen", meaning: "small talk" },
     { id: "nF014", type: "n", word: "Fro", meaning: "woman" },
     { id: "nF015", type: "n", word: "Frooc", meaning: "girl" },
     { id: "nF016", type: "n", word: "Frught", meaning: "fruit" },
@@ -74,7 +75,7 @@ const wordlist = [
     { id: "nH010", type: "n", word: "Hyrt", meaning: "heart" },
 
     { id: "nJ001", type: "n", word: "Jår", meaning: "year" },
-    { id: "nJ002", type: "n", word: "Juldjen", meaning: "guilder" },
+    { id: "nJ002", type: "n", word: "juldjen", meaning: "guilder" },
     { id: "nJ003", type: "n", word: "Jůr", meaning: "hour" },
     { id: "nJ004", type: "n", word: "Jyld", meaning: "money" },
 
@@ -149,6 +150,22 @@ const wordlist = [
 
     { id: "nY001", type: "n", word: "Yngel", meaning: "angel, loved one" },
   { id: "nY002", type: "n", word: "Ys", meaning: "ice" },
+  
+  { id: "nÅ001", type: "n", word: "Åp", meaning: "ape" },
+{ id: "nÅ002", type: "n", word: "Åpsj", meaning: "monkey" },
+{ id: "nC010", type: "n", word: "Cåbjůs", meaning: "kitchen" },
+{ id: "nE003", type: "n", word: "Ecoorn", meaning: "squirrel" },
+{ id: "nI001", type: "n", word: "Indruck", meaning: "pressue" },
+{ id: "nJ005", type: "n", word: "Jyt", meaning: "goat" },
+{ id: "nN008", type: "n", word: "Nåjel", meaning: "nail" },
+{ id: "nO004", type: "n", word: "Ordin", meaning: "order" },
+{ id: "nO005", type: "n", word: "Oorsåck", meaning: "cause" },
+{ id: "nQ001", type: "n", word: "Quast", meaning: "brush" },
+{ id: "nD005", type: "n", word: "Disj", meaning: "table" },
+{ id: "nS012", type: "n", word: "Sjů", meaning: "shoe" },
+{ id: "nF021", type: "n", word: "Forstylin", meaning: "idea" },
+{ id: "nA003", type: "n", word: "Aripennon", meaning: "extremity" },
+{ id: "nK001", type: "n", word: "Kjost", meaning: "cost" },
 
 { id:"vA001", word:"acepten", ipa:"[ʔɐˈtɕɛp.ʔn̩]", meaning:"accept", type:"v" },
 { id:"vÅ001", word:"ånfården", ipa:"[ˈʔɒ̃ɱ.fɒ.ɖɳ̩]", meaning:"address", type:"v" },
