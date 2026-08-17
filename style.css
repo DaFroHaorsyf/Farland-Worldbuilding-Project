@@ -265,3 +265,196 @@ tr:last-child td {
 h2 {
     margin-top: 35px;
 }
+/* Search page */
+
+.search-menu {
+    text-align: center;
+    margin: 30px;
+}
+
+.search-box {
+    display: none;
+    margin: 20px auto;
+}
+
+.search-box.open {
+    display: block;
+}
+
+.dictionary-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.dictionary-links a {
+    text-decoration: none;
+}
+
+.search-box input {
+    width: 300px;
+    max-width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.no-results {
+    text-align: center;
+}
+
+/* Verb conjugation layout */
+
+.conjugation {
+    display: flex;
+    gap: 25px;
+    margin: 10px 0 0 40px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.tense {
+    min-width: 145px;
+}
+
+.tense-label {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+    opacity: 0.75;
+}
+
+.conjugation-row {
+    display: flex;
+    align-items: baseline;
+    height: 1.7em;
+}
+
+.pronoun {
+    width: 7em;
+    flex-shrink: 0;
+    font-size: 0.9em;
+}
+
+.verb-form {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.verb {
+    font-weight: bold;
+    cursor: help;
+}
+
+.ipa-hover {
+    position: absolute;
+    top: 1.55em;
+    left: 0;
+
+    white-space: nowrap;
+    font-size: 0.7em;
+    font-weight: normal;
+
+    padding: 1px 4px;
+    border-radius: 4px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+
+    transition: opacity 0.15s ease;
+}
+
+.verb-form:hover .ipa-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Past participle has no pronoun, so let it sit naturally */
+.participle .conjugation-row {
+    padding-left: 2px;
+}
+.pronoun {
+    width: 7em;
+    flex-shrink: 0;
+    font-size: 0.75em;
+    white-space: nowrap;
+}
+
+.verb-form {
+    position: relative;
+    display: inline-block;
+    min-width: 5.5em;
+    margin-right: 0.5em;
+    padding-bottom: 1.25em;
+    vertical-align: top;
+}
+
+.verb {
+    cursor: help;
+}
+
+.ipa-hover {
+    position: absolute;
+    top: 1.45em;
+    left: 0;
+
+    white-space: nowrap;
+
+    font-size: 0.7em;
+    font-weight: normal;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    padding: 1px 4px;
+    border-radius: 4px;
+
+    z-index: 10;
+    transition: opacity 0.15s ease;
+}
+
+.verb-form:hover .ipa-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Past participle: IPA appears beside the word */
+.past-participle {
+    position: relative;
+    display: inline-block;
+}
+
+.past-participle .ipa-hover {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+.verb,
+.past-form,
+.past-participle {
+    font-weight: bold;
+}
+
+.ipa-hover,
+.ipa {
+    font-weight: normal;
+}
+
+/* Verb forms */
+.verb,
+.past-form,
+.past-participle {
+    font-weight: bold;
+}
+

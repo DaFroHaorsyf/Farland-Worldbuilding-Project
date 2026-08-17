@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Farlandic Dictionary Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,39 +11,49 @@
 
 <div class="dictionary">
 
-<h1>Farlandic Dictionary Search</h1>
+    <a href="index.html" class="nav-button">⌂</a>
 
-<div class="search-box">
+    <h1>Farlandic Dictionary</h1>
 
-    <input
-        id="search"
-        type="text"
-        placeholder="Search Farlandic or English"
-        onkeyup="searchWords()">
+    <div class="search-menu">
 
-    <button onclick="searchWords()">Search</button>
+        <button id="search-toggle" class="dictionary-button" onclick="toggleSearch()">
+            ⌕ Search
+        </button>
 
-</div>
+        <div id="search-box" class="search-box">
 
-<div id="results"></div>
+            <input
+                id="search"
+                type="text"
+                placeholder="Search Farlandic or English"
+                oninput="searchWords()">
 
-</div>
+        </div>
 
-<script src="wordlist.js"></script>
-<script src="search.js"></script>
+    </div>
 
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-    <title>Farlandic Dictionary Search</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <div id="dictionary-links" class="dictionary-links">
 
+        <a href="dictionary.html" class="dictionary-button">
+            Noun Dictionary
+        </a>
 
-</div>
+        <a href="verbuary.html" class="dictionary-button">
+            Verb Dictionary
+        </a>
 
-<div id="results"></div>
+        <a href="pronoun.html" class="dictionary-button">
+            Pronoun Dictionary
+        </a>
+
+        <a href="adjective.html" class="dictionary-button">
+            Adjective Dictionary
+        </a>
+
+    </div>
+
+    <div id="results"></div>
 
 </div>
 
